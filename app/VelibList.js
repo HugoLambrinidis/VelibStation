@@ -41,11 +41,12 @@ export default class VelibList extends Component {
             <ListView
                 style={{flex: 1}}
                 dataSource = {this.state.dataSource}
+                enableEmptySections={true}
                 renderRow = {(rowData) =>
-                    <View style={Styles.list}>
-                        <Text>{rowData.fields.name}</Text>
-                        <Text style={Styles.velibs}>{rowData.fields.available_bikes}/{rowData.fields.bike_stands}</Text>
-                    </View>
+                            <View style={Styles.list}>
+                                <Text>{rowData.fields.name}</Text>
+                                <Text style={Styles.velibs}>{rowData.fields.available_bikes}/{rowData.fields.bike_stands}</Text>
+                            </View>
                 }
             />
         )
