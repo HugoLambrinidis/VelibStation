@@ -1,3 +1,3 @@
 Application React Native 
 
-Find Velib station's close and display number of available velibs et available stands
+Find the nearest Vélib stations and display available bikes et available stands
